@@ -32,7 +32,6 @@ def message_sender():
             for client in conn_set:
                 client.sendall(msg.encode())
             msg = ""
-            print("send1")
 
 
 t2 = threading.Thread(target=message_sender)
